@@ -1,0 +1,12 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.ip_post_likes {
+    outline: none!important;
+}
+
+.ldpcheket {
+    background-color: gray;
+}
