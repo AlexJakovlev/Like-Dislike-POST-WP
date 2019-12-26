@@ -17,22 +17,48 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/class-likedislikepost-admin.php:131
+#: admin/class-likedislikepost-admin.php:130
 msgid "Settings"
 msgstr ""
 
-#: public/class-likedislikepost-public.php:57
-msgid "likes:"
+#: admin/partials/likedislikepost-admin-display.php:20
+msgid "Hacker?"
 msgstr ""
 
-#: public/class-likedislikepost-public.php:58
+#: admin/partials/likedislikepost-admin-display.php:49
+#: admin/partials/likedislikepost-admin-display.php:51
+msgid "Clear database when deactivated"
+msgstr ""
+
+#: admin/partials/likedislikepost-admin-display.php:56
+#: admin/partials/likedislikepost-admin-display.php:58
+msgid "How many posts to display"
+msgstr ""
+
+#: admin/partials/likedislikepost-admin-display.php:70
+msgid "Short cod for insert"
+msgstr ""
+
+#: admin/partials/likedislikepost-admin-display.php:72
+msgid "Save all changes"
+msgstr ""
+
+#: public/class-likedislikepost-public.php:107
+#: public/class-likedislikepost-public.php:143
+msgid "Likes:"
+msgstr ""
+
+#: public/class-likedislikepost-public.php:116
+#: public/class-likedislikepost-public.php:144
 msgid "Like"
 msgstr ""
 
-#: public/class-likedislikepost-public.php:59
-msgid "Liked"
+#: public/class-likedislikepost-public.php:120
+#: public/class-likedislikepost-public.php:155
+msgid "You and more:"
 msgstr ""
 
-#: public/class-likedislikepost-public.php:60
-msgid "You and more:"
+#: public/class-likedislikepost-public.php:121
+#: public/class-likedislikepost-public.php:156
+msgid "Liked"
 msgstr ""

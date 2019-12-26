@@ -104,7 +104,7 @@ class Likedislikepost_Public
 	function the_ip_likes()
 	{
 		if (!is_singular('page')) {
-			$title = __("likes:", $this->plugin_name);
+			$title = __("Likes:", $this->plugin_name);
 			$button = "";
 			$likes = get_post_meta(get_the_id(), 'likes', true);
 			$likes = $likes === "" ? array() : $likes;
@@ -140,7 +140,7 @@ class Likedislikepost_Public
 	}
 	public function ip_process_like()
 	{
-		$title = __("likes:", $this->plugin_name);
+		$title = __("Likes:", $this->plugin_name);
 		$button = __("Like", $this->plugin_name);
 		$processed_like = false;
 		$post_id = $_POST['id'];

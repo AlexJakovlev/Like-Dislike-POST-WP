@@ -27,7 +27,6 @@ if (isset($_POST['submit'])) {
 ?>
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
-<h1>Страница настроек</h1>
 
 <form method="post" name="my_options" action="options-general.php?page=likedislikepost">
 
@@ -67,8 +66,9 @@ if (isset($_POST['submit'])) {
             }
             ?>
         </select>
-        <span> [top_like_post] -- <span><?php echo __("Short cod for insert") ?></span></span>
+        <span> [top_like_post] -- <span><?php echo __("Short cod for insert", $this->plugin_name) ?></span></span>
     </fieldset>
-    <?php submit_button(__('Save all changes', $this->plugin_name), 'primary', 'submit', TRUE); ?>
+    <?php 
+    submit_button(__('Save all changes', $this->plugin_name), 'primary', 'submit', TRUE); ?>
 
 </form>
