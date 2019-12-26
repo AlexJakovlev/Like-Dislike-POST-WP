@@ -17,7 +17,15 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/class-likedislikepost-admin.php:130
+#: admin/class-likedislikepost-admin.php:112
+msgid "Like Dislike Post and Base Options Functions Setup"
+msgstr ""
+
+#: admin/class-likedislikepost-admin.php:113
+msgid "like-dislike-post"
+msgstr ""
+
+#: admin/class-likedislikepost-admin.php:131
 msgid "Settings"
 msgstr ""
 
@@ -25,17 +33,17 @@ msgstr ""
 msgid "Hacker?"
 msgstr ""
 
-#: admin/partials/likedislikepost-admin-display.php:49
-#: admin/partials/likedislikepost-admin-display.php:51
+#: admin/partials/likedislikepost-admin-display.php:48
+#: admin/partials/likedislikepost-admin-display.php:50
 msgid "Clear database when deactivated"
 msgstr ""
 
-#: admin/partials/likedislikepost-admin-display.php:56
-#: admin/partials/likedislikepost-admin-display.php:58
+#: admin/partials/likedislikepost-admin-display.php:55
+#: admin/partials/likedislikepost-admin-display.php:57
 msgid "How many posts to display"
 msgstr ""
 
-#: admin/partials/likedislikepost-admin-display.php:70
+#: admin/partials/likedislikepost-admin-display.php:69
 msgid "Short cod for insert"
 msgstr ""
 
@@ -61,4 +69,8 @@ msgstr ""
 #: public/class-likedislikepost-public.php:121
 #: public/class-likedislikepost-public.php:156
 msgid "Liked"
+msgstr ""
+
+#: public/class-likedislikepost-public.php:185
+msgid "Edit"
 msgstr ""

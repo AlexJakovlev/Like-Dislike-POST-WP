@@ -166,14 +166,14 @@ class Likedislikepost_Public
 
 	public function top_like_post()
 	{
-		$options = unserialize(get_option($this->plugin_name));
+		$options = get_option($this->plugin_name);
 		$count_post = intval($options['count_post']);
-
+		
 		$posts = get_posts(array(
 			'numberposts' => $count_post,
 			'category'    => 0,
 			'orderby'     => 'meta_value',
-			'order'       => 'ASC',
+			'order'       => 'DESC',
 			'include'     => array(),
 			'exclude'     => array(),
 			'meta_key'    => 'likescount',
@@ -182,11 +182,15 @@ class Likedislikepost_Public
 			'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
 		));
 		// post_title guid
+		$edit =  __("Edit", $this->plugin_name);
 		ob_start();
 		echo "<ul class='top_like_post'>";
-		foreach ($posts as $post) {
+		foreach ($posts as $post) { // http://192.168.1.100/test/wp-admin/post.php?post=154&amp;action=edit
+			
+			$likes  = get_post_meta($post->ID, 'likes', true);
+ $ppp = '<a style="color:blue" href="'. get_home_url(). '/wp-admin/post.php?post='.$post->ID . '&action=edit"> ('.$edit.')</a>';
 
-			echo "<li class='top_like_post_item'><a href=" . $post->guid . ">" . $post->post_title . "</a></li>";
+			echo "<li class='top_like_post_item'><a href=" . $post->guid . ">" . $post->post_title . '<span> '. count($likes).'</span>'."</a>".$ppp."</li>";
 		}
 		echo "</ul>";
 		return ob_get_clean();
