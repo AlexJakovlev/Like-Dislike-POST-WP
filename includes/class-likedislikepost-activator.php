@@ -31,15 +31,10 @@ class Likedislikepost_Activator {
 	 */
 	public static function activate() {
 		$options = get_option('likedislikepost');
-		// var_dump($options);
-		// die;
+
 		if (!$options){
-			// ["clear_database"]);
-			// die;
-			// if ($options["clear_database"]){
 			$options['count_post'] = "5";
 			add_option('likedislikepost', $options);
-			// add_option("likedislikepost_top_like_post", serialize(array())); 
 		}	
 	}
 }

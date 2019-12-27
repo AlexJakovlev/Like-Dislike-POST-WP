@@ -109,11 +109,10 @@ class Likedislikepost_Admin
 		/*
       * Add a settings page for this plugin to the Settings menu.
      */
-		$options_desc = __('Like Dislike Post and Base Options Functions Setup', $this->plugin_name);
-		$name_admin_menu = __('like-dislike-post', $this->plugin_name);
+		
 		add_options_page(
-			$options_desc,
-			$name_admin_menu,
+			__('Like Dislike Post and Base Options Functions Setup', $this->plugin_name),
+			__('like-dislike-post', $this->plugin_name),
 			'manage_options',
 			$this->plugin_name,
 			array($this, 'display_likedislikepost_setup_page')

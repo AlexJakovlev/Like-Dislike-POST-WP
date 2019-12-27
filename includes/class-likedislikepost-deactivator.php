@@ -31,8 +31,7 @@ class Likedislikepost_Deactivator {
 	 */
 	public static function deactivate() {
 		$options = get_option('likedislikepost');
-		// var_dump($options['clear_database']);
-		// die;
+
 		 if ($options['clear_database'] === "true") {
 		delete_metadata("post", 0, "likes" , "", true);
 		delete_option('likedislikepost');
